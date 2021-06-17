@@ -1,24 +1,30 @@
 * {
     box-sizing: border-box;
-}
-
-html {
-    background-color: #ccc;
-}
-
-body {
     font-family: 'Noto Sans', sans-serif;
 }
 
-footer {
-    border-top: 2px solid black;
+html {
+    background-color: #eee;
+}
+h2 {
+    margin: 0;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.footer-nav{ 
+    border-top: 1px solid black;
 }
 
 .wrapper,
 .main-nav,
+.portfolio-project,
 nav ul {
     display: flex;
     flex-direction: column;
+    text-align: center;
 }
 
 nav ul {
@@ -34,12 +40,18 @@ nav li{
 
 .wrapper {
     background-color: white;
+    color: #696969;
 }
 
 .contact {
     background-color: #ccc;
 }
 
+.footer-nav {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
 /* MEDIA QUERIES */
 @media screen and (min-width: 768px) {
 
