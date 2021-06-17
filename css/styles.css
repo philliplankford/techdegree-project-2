@@ -20,13 +20,16 @@ body {
 }
 
 h2 {
-    margin: 1rem 0 0;
     text-transform: uppercase;
     font-size: medium;
 }
 
 h3 {
     margin: 1rem 0;
+}
+
+img {
+    max-width: 100%;
 }
 
 a {
@@ -44,23 +47,24 @@ span {
     font-weight: bold;
 }
 
-.footer-nav { 
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-    border-top: 1px solid #696969;
-    margin: 0 1rem;
-    margin-top: auto;
-    padding: 1rem 0 .5rem;
+header,
+main {
+    text-align: center;
 }
 
-.wrapper,
-.main-nav,
-.portfolio-project,
-nav ul {
+footer {
+    border-top: 1px solid #696969;
     display: flex;
-    flex-direction: column;
-    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    margin: 0 1rem;
+    margin-top: auto;
+    padding: 1rem 1rem;
+}
+
+.footer-nav {
+    list-style: none;
 }
 
 nav li{
@@ -71,7 +75,17 @@ nav li{
 }
 
 .wrapper {
-    background-color: white;
+    max-width: 1100px;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.port {
+    margin: 10px;
+    min-height: 250px;
+    color: #696969;
+    text-align: center;
+    padding-top: 5px;
 }
 
 .contact,
@@ -89,9 +103,6 @@ nav li{
     padding: 1rem 1rem;
 }
 
-.profile-pic {
-    padding: 3rem 3rem 1rem 3rem;
-}
 
 .contact h2, 
 .contact p {
@@ -102,15 +113,66 @@ nav li{
     margin-bottom: 3rem;
 }
 
-.bio {
-    padding: 1rem 1rem;
+.hidden {
+    display: none;
+}
+
+main {
+    background-color: white;
 }
 
 /* MEDIA QUERIES */
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
 
+    .back-top {
+        display: none;
+    }
+
+    .hidden {
+        display: inline-block;
+        margin-left: 2rem;
+    }
+
+    .wrapper {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .port {
+        flex-basis: calc(50% - 20px);
+    }
+
+    .intro {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    nav ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    nav ul li{
+        padding: 0;
+        background-color: transparent;
+    }
 }
 
-@media screen and (min-width: 1024px) {
+@media (min-width: 1024px) {
+
+    .main-nav {
+        display: flex; 
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .port {
+        flex-basis: calc(33.33% - 20px);
+    }
+
+    
 
 }
