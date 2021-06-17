@@ -2,6 +2,44 @@
     box-sizing: border-box;
 }
 
+html {
+    background-color: #ccc;
+}
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+}
+
+footer {
+    border-top: 2px solid black;
+}
+
+.wrapper,
+.main-nav,
+nav ul {
+    display: flex;
+    flex-direction: column;
+}
+
+nav ul {
+    text-align: center;
+}
+
+nav li{
+    background-color: white;
+    padding: 1rem 1rem;
+    margin: .5rem .5rem;
+    list-style: none;
+}
+
+.wrapper {
+    background-color: white;
+}
+
+.contact {
+    background-color: #ccc;
+}
+
 /* MEDIA QUERIES */
 @media screen and (min-width: 768px) {
 
