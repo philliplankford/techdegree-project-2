@@ -1,21 +1,57 @@
 * {
     box-sizing: border-box;
     font-family: 'Noto Sans', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body {
+    height: 100%;
 }
 
 html {
-    background-color: #eee;
-}
-h2 {
-    margin: 0;
-}
-a {
-    text-decoration: none;
-    color: black;
+    background-color: #f8f8f8;
+    color: #696969;
 }
 
-.footer-nav{ 
-    border-top: 1px solid black;
+body {
+    line-height: 1.4rem;
+}
+
+h2 {
+    margin: 1rem 0 0;
+    text-transform: uppercase;
+    font-size: medium;
+}
+
+h3 {
+    margin: 1rem 0;
+}
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #696969;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+span {
+    font-weight: bold;
+}
+
+.footer-nav { 
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    border-top: 1px solid #696969;
+    margin: 0 1rem;
+    margin-top: auto;
+    padding: 1rem 0 .5rem;
 }
 
 .wrapper,
@@ -27,31 +63,49 @@ nav ul {
     text-align: center;
 }
 
-nav ul {
-    text-align: center;
-}
-
 nav li{
     background-color: white;
     padding: 1rem 1rem;
-    margin: .5rem .5rem;
+    margin: .3rem .5rem;
     list-style: none;
 }
 
 .wrapper {
     background-color: white;
-    color: #696969;
+}
+
+.contact,
+.skills {
+    text-align: center;
+}
+
+.skills li {
+    padding: 1rem 1rem;
+    margin: 1rem 0;
+    background-color: white;
+    
+}
+.portfolio-project {
+    padding: 1rem 1rem;
+}
+
+.profile-pic {
+    padding: 3rem 3rem 1rem 3rem;
+}
+
+.contact h2, 
+.contact p {
+    padding: .5rem .5rem;
 }
 
 .contact {
-    background-color: #ccc;
+    margin-bottom: 3rem;
 }
 
-.footer-nav {
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
+.bio {
+    padding: 1rem 1rem;
 }
+
 /* MEDIA QUERIES */
 @media screen and (min-width: 768px) {
 
