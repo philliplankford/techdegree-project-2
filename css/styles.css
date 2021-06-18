@@ -21,7 +21,9 @@ body {
 
 h1 {
     padding: 1.5rem;
+    color: #d95763;
 }
+
 h2 {
     text-transform: uppercase;
     font-size: medium;
@@ -39,7 +41,7 @@ a {
     text-decoration: none;
     text-transform: uppercase;
     font-weight: bold;
-    color: #696969;
+    color: #d95763;
 }
 
 a:hover {
@@ -53,6 +55,10 @@ span {
 header,
 main {
     text-align: center;
+}
+
+main h2 {
+    padding-top: 1rem;
 }
 
 footer {
@@ -91,6 +97,11 @@ nav li{
     padding-top: 5px;
 }
 
+h2,
+h3 {
+   color: #d95763;
+}
+
 .contact,
 .skills {
     text-align: center;
@@ -100,9 +111,9 @@ nav li{
     padding: 1rem 1rem;
     margin: .5rem 0 0;
     background-color: white;
-    list-style: none;
-    
+    list-style: none; 
 }
+
 .portfolio-project {
     padding: 1rem 1rem;
 }
@@ -120,17 +131,8 @@ nav li{
     display: none;
 }
 
-.wrapper {
-    /*background-color: white;*/
-    
-}
-
 .intro {
     padding: 2%;
-}
-
-main h2 {
-    padding-top: 1rem;
 }
 
 .profile-pic {
@@ -146,6 +148,7 @@ main h2 {
 .bio {
     padding: 1rem;
 }
+
 
 /* MEDIA QUERIES */
 @media (min-width: 768px) {
@@ -197,7 +200,6 @@ main h2 {
 
     .container {
         padding: 0 25%;
-        /*background-color: #f8f8f8;*/
     }
 
     .profile-pic {
@@ -208,16 +210,13 @@ main h2 {
 
 @media (min-width: 1024px) {
 
-    header {
-        padding: 2rem 2rem;
-    }
-
     .main-nav {
         display: flex; 
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
     }
+
     .port {
         flex-basis: calc(33.33% - 20px);
     }
